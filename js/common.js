@@ -9,6 +9,7 @@
                  "top":'0', "left": '0'}).hide().eq(0).show();
             var slideNum = 0;
             var slideTime;
+			var slideTime2;
             slideCount = $("header + .slider #slider .slide").size();//только дл€ верхнего слайдера
 			slideCount2 = $(".reviews #slider .slide").size();//ƒл€ нижнего слайдера
 			
@@ -34,7 +35,7 @@
             }
 			
 			var animSlide2 = function(arrow){
-                clearTimeout(slideTime);
+                clearTimeout(slideTime2);
                 $('.reviews .slide').eq(slideNum).fadeOut(hwSlideSpeed);
                 if(arrow == "next"){
                     if(slideNum == (slideCount2-1)){slideNum=0;}
@@ -58,14 +59,16 @@
                 if(hwNeedLinks){
 				//Ќадо чтоб этот код работал только на нижний слайдер
 				
-                 var $linkArrow = $('<a id="prewbutton" href="#"></a><a id="nextbutton" href="#"></a>')
-                     .prependTo('.reviews #slider');      
+                 //var $linkArrow = $('<a id="prewbutton"></a><a id="nextbutton" ></a>')
+                   //  .prependTo('.reviews #slider');      
+				   var $linkArrow = $('<a id="prewbutton"></a><a id="nextbutton" ></a>')
+                     .appendTo('.reviews #slider');
                      
 				    $('#nextbutton').click(function(){
-                         animSlide("next") 
+                         animSlide2("next") 
                         })
                      $('#prewbutton').click(function(){
-                         animSlide("prew");
+                         animSlide2("prew");
                          })
                 }
                     var $adderSpan = '';
@@ -84,10 +87,13 @@
                     });
                     var pause = false;
                     var rotator = function(){
-                    if(!pause){slideTime = setTimeout(function(){animSlide('next')}, hwTimeOut);}
-                            }
+                    if(!pause){
+						slideTime = setTimeout(function(){animSlide('next')}, hwTimeOut);
+						slideTime2 = setTimeout(function(){animSlide2('next')}, hwTimeOut);
+						}
+                    }
                     $('#slider-wrap').hover(    
-                        function(){clearTimeout(slideTime); pause = true;},
+                        function(){clearTimeout(slideTime); clearTimeout(slideTime2)   ; pause = true;},
                         function(){pause = false; rotator();
                         });
                     rotator();

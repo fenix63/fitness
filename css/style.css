@@ -115,6 +115,8 @@ header .logo{
     font-weight: bold;
 }
 
+
+
 .actions-bottom{
     background-color: #000;
     height: 125px;
@@ -390,6 +392,8 @@ body .hr{
 
 .cards .card:last-child{
 	margin-left:30px;
+	background-image:url(../img/card_4.png);
+	background-position: 0% 124%;
 }
 
 .card .desc{

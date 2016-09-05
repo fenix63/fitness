@@ -133,14 +133,23 @@
 	margin-top:30px;
 }
 
-.prepod_modal p, .raspisanie_modal p{
+.prepod_modal p, .raspisanie_modal p, .skidka{
 	font-family:'PT Sans';
 	font-size:16px;
 }
 
+.right_now{
+	font-weight:bold;
+}
+
+.skidka{
+	color:#9dc02e;
+}
+
 .raspisanie_modal{
 	width:605px;
-	height:918px;
+	/* height:918px; */
+	height:85%;
 	position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
 	top: 25%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
 	left:35%;
@@ -189,4 +198,31 @@
 	font-family:'PT Sans';
 	font-weight:bold;
 	font-size:16px;
+}
+
+.raspisanie_modal input{
+	width:186px;
+	height:30px;
+	border:0;
+	border-radius:20px;
+	background-color:#000;
+	font-family:'PT Sans';
+	font-style:italic;
+	font-size:12pt;
+	color:#bababa;
+	padding-left:15px;
+}
+
+.raspisanie_modal button{
+    padding: 0px 30px;
+	width:165px;
+	height:35px;
+	font-family:'PT Sans';
+	font-size:14pt;
+	text-transform:uppercase;
+	color:#fff;
+	border:0;
+	border-radius:20px;
+	background-color:#d9697f;
+	cursor:pointer;
 }

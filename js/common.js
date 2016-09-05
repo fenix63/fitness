@@ -104,10 +104,10 @@
 					//Надо доделать
 					$('.items .item').hover(function(){
 						$(this).children('.layer').css('display','block');
-						$(this).children('.about').children('button').css({'color':'#9dc02e'},{'background-color':'#fff'});
+						$(this).children('.about').children('button').css({'color':'#9dc02e','background-color':'#fff'});
 					}, function(){
 						$(this).children('.layer').css('display','none');
-						$(this).children('.about').children('button').css('color','#fff');
+						$(this).children('.about').children('button').css({'color':'#fff','background-color':'transparent'});
 					});
 					
 					

@@ -10,8 +10,8 @@
             var slideNum = 0;
             var slideTime;
 			var slideTime2;
-            slideCount = $("header + .slider #slider .slide").size();//только для верхнего слайдера
-			slideCount2 = $(".reviews #slider .slide").size();//Для нижнего слайдера
+            slideCount = $("header + .slider #slider .slide").size();//ГІГ®Г«ГјГЄГ® Г¤Г«Гї ГўГҐГ°ГµГ­ГҐГЈГ® Г±Г«Г Г©Г¤ГҐГ°Г 
+			slideCount2 = $(".reviews #slider .slide").size();//Г„Г«Гї Г­ГЁГ¦Г­ГҐГЈГ® Г±Г«Г Г©Г¤ГҐГ°Г 
 			
             var animSlide = function(arrow){
                 clearTimeout(slideTime);
@@ -57,7 +57,7 @@
 			
 			
                 if(hwNeedLinks){
-				//Надо чтоб этот код работал только на нижний слайдер
+				//ГЌГ Г¤Г® Г·ГІГ®ГЎ ГЅГІГ®ГІ ГЄГ®Г¤ Г°Г ГЎГ®ГІГ Г« ГІГ®Г«ГјГЄГ® Г­Г  Г­ГЁГ¦Г­ГЁГ© Г±Г«Г Г©Г¤ГҐГ°
 				
                  //var $linkArrow = $('<a id="prewbutton"></a><a id="nextbutton" ></a>')
                    //  .prependTo('.reviews #slider');      
@@ -76,7 +76,7 @@
                             $adderSpan += '<span class = "control-slide">' + index + '</span>';
                         });
 
-                    //Добавление кнопок навигации
+                    //Г„Г®ГЎГ ГўГ«ГҐГ­ГЁГҐ ГЄГ­Г®ГЇГ®ГЄ Г­Г ГўГЁГЈГ Г¶ГЁГЁ
                     //$('<div class ="sli-links">' + $adderSpan +'</div>').appendTo('#slider-wrap');
                     
                     $(".control-slide:first").addClass("active");
@@ -101,7 +101,7 @@
 					
 					
 					
-					//Надо доделать
+					//ГЌГ Г¤Г® Г¤Г®Г¤ГҐГ«Г ГІГј
 					$('.items .item').hover(function(){
 						$(this).children('.layer').css('display','block');
 						$(this).children('.about').children('button').css({'color':'#9dc02e','background-color':'#fff'});
@@ -111,7 +111,7 @@
 					});
 					
 					
-					//Маска для телефона
+					//ГЊГ Г±ГЄГ  Г¤Г«Гї ГІГҐГ«ГҐГґГ®Г­Г 
 					$(function(){
 					  $("input[name='phone']").mask("+7(999) 999-99-99");
 					});
@@ -122,33 +122,33 @@
 
 	
 
-		$(document).ready(function() { // вся мaгия пoсле зaгрузки стрaницы
-			$('.social button').click( function(event){ // лoвим клик пo ссылки с id="go"
-				event.preventDefault(); // выключaем стaндaртную рoль элементa
-				$('#overlay').fadeIn(400, // снaчaлa плaвнo пoкaзывaем темную пoдлoжку
-					function(){ // пoсле выпoлнения предъидущей aнимaции
+		$(document).ready(function() { // ГўГ±Гї Г¬aГЈГЁГї ГЇoГ±Г«ГҐ Г§aГЈГ°ГіГ§ГЄГЁ Г±ГІГ°aГ­ГЁГ¶Г»
+			$('.social button').click( function(event){ // Г«oГўГЁГ¬ ГЄГ«ГЁГЄ ГЇo Г±Г±Г»Г«ГЄГЁ Г± id="go"
+				event.preventDefault(); // ГўГ»ГЄГ«ГѕГ·aГҐГ¬ Г±ГІaГ­Г¤aГ°ГІГ­ГіГѕ Г°oГ«Гј ГЅГ«ГҐГ¬ГҐГ­ГІa
+				$('#overlay').fadeIn(400, // Г±Г­aГ·aГ«a ГЇГ«aГўГ­o ГЇoГЄaГ§Г»ГўaГҐГ¬ ГІГҐГ¬Г­ГіГѕ ГЇoГ¤Г«oГ¦ГЄГі
+					function(){ // ГЇoГ±Г«ГҐ ГўГ»ГЇoГ«Г­ГҐГ­ГЁГї ГЇГ°ГҐГ¤ГєГЁГ¤ГіГ№ГҐГ© aГ­ГЁГ¬aГ¶ГЁГЁ
 						$('#modal_form') 
-							.css('display', 'block') // убирaем у мoдaльнoгo oкнa display: none;
-							.animate({opacity: 1, top: '50%'}, 200); // плaвнo прибaвляем прoзрaчнoсть oднoвременнo сo съезжaнием вниз
+							.css('display', 'block') // ГіГЎГЁГ°aГҐГ¬ Гі Г¬oГ¤aГ«ГјГ­oГЈo oГЄГ­a display: none;
+							.animate({opacity: 1, top: '50%'}, 200); // ГЇГ«aГўГ­o ГЇГ°ГЁГЎaГўГ«ГїГҐГ¬ ГЇГ°oГ§Г°aГ·Г­oГ±ГІГј oГ¤Г­oГўГ°ГҐГ¬ГҐГ­Г­o Г±o Г±ГєГҐГ§Г¦aГ­ГЁГҐГ¬ ГўГ­ГЁГ§
 				});
 			});
 			
-			/* Зaкрытие мoдaльнoгo oкнa, тут делaем тo же сaмoе нo в oбрaтнoм пoрядке */
-			$('#modal_close, #overlay').click( function(){ // лoвим клик пo крестику или пoдлoжке
+			/* Г‡aГЄГ°Г»ГІГЁГҐ Г¬oГ¤aГ«ГјГ­oГЈo oГЄГ­a, ГІГіГІ Г¤ГҐГ«aГҐГ¬ ГІo Г¦ГҐ Г±aГ¬oГҐ Г­o Гў oГЎГ°aГІГ­oГ¬ ГЇoГ°ГїГ¤ГЄГҐ */
+			$('#modal_close, #overlay').click( function(){ // Г«oГўГЁГ¬ ГЄГ«ГЁГЄ ГЇo ГЄГ°ГҐГ±ГІГЁГЄГі ГЁГ«ГЁ ГЇoГ¤Г«oГ¦ГЄГҐ
 				$('#modal_form, .msg_ok, .tren, .prepod_modal, .raspisanie_modal')
-					.animate({opacity: 0, top: '45%'}, 200,  // плaвнo меняем прoзрaчнoсть нa 0 и oднoвременнo двигaем oкнo вверх
-						function(){ // пoсле aнимaции
-							$(this).css('display', 'none'); // делaем ему display: none;
-							$('#overlay').fadeOut(400); // скрывaем пoдлoжку
+					.animate({opacity: 0, top: '45%'}, 200,  // ГЇГ«aГўГ­o Г¬ГҐГ­ГїГҐГ¬ ГЇГ°oГ§Г°aГ·Г­oГ±ГІГј Г­a 0 ГЁ oГ¤Г­oГўГ°ГҐГ¬ГҐГ­Г­o Г¤ГўГЁГЈaГҐГ¬ oГЄГ­o ГўГўГҐГ°Гµ
+						function(){ // ГЇoГ±Г«ГҐ aГ­ГЁГ¬aГ¶ГЁГЁ
+							$(this).css('display', 'none'); // Г¤ГҐГ«aГҐГ¬ ГҐГ¬Гі display: none;
+							$('#overlay').fadeOut(400); // Г±ГЄГ°Г»ГўaГҐГ¬ ГЇoГ¤Г«oГ¦ГЄГі
 						}
 					);
 			});
 			
-			//аякс форма обратной связи
-			//проверяет какой ответ был получен
-			//и в зависимости от ответа
-			//выводит информацию о статусе
-			//отправки письма
+			//Г ГїГЄГ± ГґГ®Г°Г¬Г  Г®ГЎГ°Г ГІГ­Г®Г© Г±ГўГїГ§ГЁ
+			//ГЇГ°Г®ГўГҐГ°ГїГҐГІ ГЄГ ГЄГ®Г© Г®ГІГўГҐГІ ГЎГ»Г« ГЇГ®Г«ГіГ·ГҐГ­
+			//ГЁ Гў Г§Г ГўГЁГ±ГЁГ¬Г®Г±ГІГЁ Г®ГІ Г®ГІГўГҐГІГ 
+			//ГўГ»ГўГ®Г¤ГЁГІ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГѕ Г® Г±ГІГ ГІГіГ±ГҐ
+			//Г®ГІГЇГ°Г ГўГЄГЁ ГЇГЁГ±ГјГ¬Г 
 			$("#modal_form form").submit(function() {
 				var str = $(this).serialize();
 				$.ajax({
@@ -161,8 +161,8 @@
 						}
 						else {
 							$('#modal_form') 
-							.css('display', 'none') // убирaем у мoдaльнoгo oкнa display: none;
-							.animate({opacity: 0, top: '50%'}, 200); // плaвнo прибaвляем прoзрaчнoсть oднoвременнo сo съезжaнием вниз
+							.css('display', 'none') // ГіГЎГЁГ°aГҐГ¬ Гі Г¬oГ¤aГ«ГјГ­oГЈo oГЄГ­a display: none;
+							.animate({opacity: 0, top: '50%'}, 200); // ГЇГ«aГўГ­o ГЇГ°ГЁГЎaГўГ«ГїГҐГ¬ ГЇГ°oГ§Г°aГ·Г­oГ±ГІГј oГ¤Г­oГўГ°ГҐГ¬ГҐГ­Г­o Г±o Г±ГєГҐГ§Г¦aГ­ГЁГҐГ¬ ГўГ­ГЁГ§
 							
 							$('.msg_ok').css('display','block').animate({opacity:1, top:'50%'},200);
 							//alert('error!');
@@ -172,49 +172,74 @@
 				return false;
 			});
 			
-			//Тренажерный зал
-			$('.programms .items button').click( function(event){ // лoвим клик пo ссылки с id="go"
-				event.preventDefault(); // выключaем стaндaртную рoль элементa
-				$('#overlay').fadeIn(400, // снaчaлa плaвнo пoкaзывaем темную пoдлoжку
-					function(){ // пoсле выпoлнения предъидущей aнимaции
+			//Г’Г°ГҐГ­Г Г¦ГҐГ°Г­Г»Г© Г§Г Г«
+			$('.programms .items button').click( function(event){ // Г«oГўГЁГ¬ ГЄГ«ГЁГЄ ГЇo Г±Г±Г»Г«ГЄГЁ Г± id="go"
+				event.preventDefault(); // ГўГ»ГЄГ«ГѕГ·aГҐГ¬ Г±ГІaГ­Г¤aГ°ГІГ­ГіГѕ Г°oГ«Гј ГЅГ«ГҐГ¬ГҐГ­ГІa
+				$('#overlay').fadeIn(400, // Г±Г­aГ·aГ«a ГЇГ«aГўГ­o ГЇoГЄaГ§Г»ГўaГҐГ¬ ГІГҐГ¬Г­ГіГѕ ГЇoГ¤Г«oГ¦ГЄГі
+					function(){ // ГЇoГ±Г«ГҐ ГўГ»ГЇoГ«Г­ГҐГ­ГЁГї ГЇГ°ГҐГ¤ГєГЁГ¤ГіГ№ГҐГ© aГ­ГЁГ¬aГ¶ГЁГЁ
 						$('.tren') 
-							.css('display', 'block') // убирaем у мoдaльнoгo oкнa display: none;
-							.animate({opacity: 1, top: '25%'}, 200); // плaвнo прибaвляем прoзрaчнoсть oднoвременнo сo съезжaнием вниз
+							.css('display', 'block') // ГіГЎГЁГ°aГҐГ¬ Гі Г¬oГ¤aГ«ГјГ­oГЈo oГЄГ­a display: none;
+							.animate({opacity: 1, top: '25%'}, 200); // ГЇГ«aГўГ­o ГЇГ°ГЁГЎaГўГ«ГїГҐГ¬ ГЇГ°oГ§Г°aГ·Г­oГ±ГІГј oГ¤Г­oГўГ°ГҐГ¬ГҐГ­Г­o Г±o Г±ГєГҐГ§Г¦aГ­ГЁГҐГ¬ ГўГ­ГЁГ§
 				});
 			});
 			
-			//Преподаватели
-			$('.humans .avatar').click( function(event){ // лoвим клик пo ссылки с id="go"
-				event.preventDefault(); // выключaем стaндaртную рoль элементa
-				$('#overlay').fadeIn(400, // снaчaлa плaвнo пoкaзывaем темную пoдлoжку
-					function(){ // пoсле выпoлнения предъидущей aнимaции
+			//ГЏГ°ГҐГЇГ®Г¤Г ГўГ ГІГҐГ«ГЁ
+			$('.humans .avatar').click( function(event){ // Г«oГўГЁГ¬ ГЄГ«ГЁГЄ ГЇo Г±Г±Г»Г«ГЄГЁ Г± id="go"
+				event.preventDefault(); // ГўГ»ГЄГ«ГѕГ·aГҐГ¬ Г±ГІaГ­Г¤aГ°ГІГ­ГіГѕ Г°oГ«Гј ГЅГ«ГҐГ¬ГҐГ­ГІa
+				$('#overlay').fadeIn(400, // Г±Г­aГ·aГ«a ГЇГ«aГўГ­o ГЇoГЄaГ§Г»ГўaГҐГ¬ ГІГҐГ¬Г­ГіГѕ ГЇoГ¤Г«oГ¦ГЄГі
+					function(){ // ГЇoГ±Г«ГҐ ГўГ»ГЇoГ«Г­ГҐГ­ГЁГї ГЇГ°ГҐГ¤ГєГЁГ¤ГіГ№ГҐГ© aГ­ГЁГ¬aГ¶ГЁГЁ
 						$('.prepod_modal') 
-							.css('display', 'block') // убирaем у мoдaльнoгo oкнa display: none;
-							.animate({opacity: 1, top: '25%'}, 200); // плaвнo прибaвляем прoзрaчнoсть oднoвременнo сo съезжaнием вниз
+							.css('display', 'block') // ГіГЎГЁГ°aГҐГ¬ Гі Г¬oГ¤aГ«ГјГ­oГЈo oГЄГ­a display: none;
+							.animate({opacity: 1, top: '25%'}, 200); // ГЇГ«aГўГ­o ГЇГ°ГЁГЎaГўГ«ГїГҐГ¬ ГЇГ°oГ§Г°aГ·Г­oГ±ГІГј oГ¤Г­oГўГ°ГҐГ¬ГҐГ­Г­o Г±o Г±ГєГҐГ§Г¦aГ­ГЁГҐГ¬ ГўГ­ГЁГ§
 				});
 			});
 			
 			
-			//Расписание занятий
-			$('.time_table .table button').click( function(event){ // лoвим клик пo ссылки с id="go"
-				event.preventDefault(); // выключaем стaндaртную рoль элементa
-				$('#overlay').fadeIn(400, // снaчaлa плaвнo пoкaзывaем темную пoдлoжку
-					function(){ // пoсле выпoлнения предъидущей aнимaции
+			//ГђГ Г±ГЇГЁГ±Г Г­ГЁГҐ Г§Г Г­ГїГІГЁГ©
+			$('.time_table .table button').click( function(event){ // Г«oГўГЁГ¬ ГЄГ«ГЁГЄ ГЇo Г±Г±Г»Г«ГЄГЁ Г± id="go"
+				event.preventDefault(); // ГўГ»ГЄГ«ГѕГ·aГҐГ¬ Г±ГІaГ­Г¤aГ°ГІГ­ГіГѕ Г°oГ«Гј ГЅГ«ГҐГ¬ГҐГ­ГІa
+				$('#overlay').fadeIn(400, // Г±Г­aГ·aГ«a ГЇГ«aГўГ­o ГЇoГЄaГ§Г»ГўaГҐГ¬ ГІГҐГ¬Г­ГіГѕ ГЇoГ¤Г«oГ¦ГЄГі
+					function(){ // ГЇoГ±Г«ГҐ ГўГ»ГЇoГ«Г­ГҐГ­ГЁГї ГЇГ°ГҐГ¤ГєГЁГ¤ГіГ№ГҐГ© aГ­ГЁГ¬aГ¶ГЁГЁ
 						$('.raspisanie_modal') 
-							.css('display', 'block') // убирaем у мoдaльнoгo oкнa display: none;
-							.animate({opacity: 1, top: '25%'}, 200); // плaвнo прибaвляем прoзрaчнoсть oднoвременнo сo съезжaнием вниз
+							.css('display', 'block') // ГіГЎГЁГ°aГҐГ¬ Гі Г¬oГ¤aГ«ГјГ­oГЈo oГЄГ­a display: none;
+							.animate({opacity: 1, top: '25%'}, 200); // ГЇГ«aГўГ­o ГЇГ°ГЁГЎaГўГ«ГїГҐГ¬ ГЇГ°oГ§Г°aГ·Г­oГ±ГІГј oГ¤Г­oГўГ°ГҐГ¬ГҐГ­Г­o Г±o Г±ГєГҐГ§Г¦aГ­ГЁГҐГ¬ ГўГ­ГЁГ§
 				});
 			});
 			
 			
-			$('.time_table .questions button').click( function(event){ // лoвим клик пo ссылки с id="go"
-				event.preventDefault(); // выключaем стaндaртную рoль элементa
-				$('#overlay').fadeIn(400, // снaчaлa плaвнo пoкaзывaем темную пoдлoжку
-					function(){ // пoсле выпoлнения предъидущей aнимaции
+			$('.time_table .questions button').click( function(event){ // Г«oГўГЁГ¬ ГЄГ«ГЁГЄ ГЇo Г±Г±Г»Г«ГЄГЁ Г± id="go"
+				event.preventDefault(); // ГўГ»ГЄГ«ГѕГ·aГҐГ¬ Г±ГІaГ­Г¤aГ°ГІГ­ГіГѕ Г°oГ«Гј ГЅГ«ГҐГ¬ГҐГ­ГІa
+				$('#overlay').fadeIn(400, // Г±Г­aГ·aГ«a ГЇГ«aГўГ­o ГЇoГЄaГ§Г»ГўaГҐГ¬ ГІГҐГ¬Г­ГіГѕ ГЇoГ¤Г«oГ¦ГЄГі
+					function(){ // ГЇoГ±Г«ГҐ ГўГ»ГЇoГ«Г­ГҐГ­ГЁГї ГЇГ°ГҐГ¤ГєГЁГ¤ГіГ№ГҐГ© aГ­ГЁГ¬aГ¶ГЁГЁ
 						$('#modal_form') 
-							.css('display', 'block') // убирaем у мoдaльнoгo oкнa display: none;
-							.animate({opacity: 1, top: '50%'}, 200); // плaвнo прибaвляем прoзрaчнoсть oднoвременнo сo съезжaнием вниз
+							.css('display', 'block') // ГіГЎГЁГ°aГҐГ¬ Гі Г¬oГ¤aГ«ГјГ­oГЈo oГЄГ­a display: none;
+							.animate({opacity: 1, top: '50%'}, 200); // ГЇГ«aГўГ­o ГЇГ°ГЁГЎaГўГ«ГїГҐГ¬ ГЇГ°oГ§Г°aГ·Г­oГ±ГІГј oГ¤Г­oГўГ°ГҐГ¬ГҐГ­Г­o Г±o Г±ГєГҐГ§Г¦aГ­ГЁГҐГ¬ ГўГ­ГЁГ§
 				});
 			});
+
+            //Р Р°Р·РґРµР» С†РµРЅС‹, РєРЅРѕРїРєР° РєСѓРїРёС‚СЊ
+            $('.card button').click( function(event){ // Г«oГўГЁГ¬ ГЄГ«ГЁГЄ ГЇo Г±Г±Г»Г«ГЄГЁ Г± id="go"
+                event.preventDefault(); // ГўГ»ГЄГ«ГѕГ·aГҐГ¬ Г±ГІaГ­Г¤aГ°ГІГ­ГіГѕ Г°oГ«Гј ГЅГ«ГҐГ¬ГҐГ­ГІa
+                $('#overlay').fadeIn(400, // Г±Г­aГ·aГ«a ГЇГ«aГўГ­o ГЇoГЄaГ§Г»ГўaГҐГ¬ ГІГҐГ¬Г­ГіГѕ ГЇoГ¤Г«oГ¦ГЄГі
+                    function(){ // ГЇoГ±Г«ГҐ ГўГ»ГЇoГ«Г­ГҐГ­ГЁГї ГЇГ°ГҐГ¤ГєГЁГ¤ГіГ№ГҐГ© aГ­ГЁГ¬aГ¶ГЁГЁ
+                        $('#modal_form') 
+                            .css('display', 'block') // ГіГЎГЁГ°aГҐГ¬ Гі Г¬oГ¤aГ«ГјГ­oГЈo oГЄГ­a display: none;
+                            .animate({opacity: 1, top: '50%'}, 200); // ГЇГ«aГўГ­o ГЇГ°ГЁГЎaГўГ«ГїГҐГ¬ ГЇГ°oГ§Г°aГ·Г­oГ±ГІГј oГ¤Г­oГўГ°ГҐГ¬ГҐГ­Г­o Г±o Г±ГєГҐГ§Г¦aГ­ГЁГҐГ¬ ГўГ­ГЁГ§
+                });
+            });
+
+
+            //Р›СѓРїР° РїСЂРё РЅР°РІРµРґРµРЅРёРё
+            $('.photos .photo-item').hover(
+                function(){
+                    $(this).css('cursor','pointer');
+                    $(this).children('.layer').css('display','block');
+                },
+                function(){
+                    $(this).css('cursor','default');
+                    $(this).children('.layer').css('display','none');  
+                }
+            );
+
 			
 		});

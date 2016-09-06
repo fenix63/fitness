@@ -55,10 +55,12 @@ header .logo{
     width: 343px;
     height: 56px;
     float: left;
-    margin-top: 47px;
+    margin-top: 42px;
     font-family: 'Bodnoff';
     font-size:30pt;
     text-transform: uppercase;
+    /*background-image: url(../img/logo_header.png);
+    background-repeat: no-repeat;*/
 }
 
 .logo, header{
@@ -211,6 +213,7 @@ body .hr{
 	cursor:pointer;
 	position:relative;
 	z-index:1;
+	outline: none;
 }
 
 
@@ -233,6 +236,7 @@ body .hr{
 	top:42%;
 	margin:0 auto;
 	width:355px;
+	z-index: 1;
 }
 
 .items .item{
@@ -505,6 +509,7 @@ body .hr{
 	background-color:#9dc02e;
 	color:#fff;
 	cursor:pointer;
+	outline: none;
 }
 
 .time_table{
@@ -540,6 +545,7 @@ body .hr{
 	font-size:14px;
 	color:#fff;
 	cursor:pointer;
+	outline: none;
 }
 
 .table  .line button:hover{
@@ -657,6 +663,7 @@ body .hr{
 	width:175px;
 	height:42px;
 	cursor:pointer;
+	outline: none;
 }
 
 .reviews{
@@ -700,6 +707,9 @@ body .hr{
 	opacity: .53;
 	width:100%;
 	height:100%;
+	background-image: url(../img/search.png);
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 .photos .photo-item{
@@ -707,6 +717,11 @@ body .hr{
 	width:25%;
 	height:50%;
 	background-image:url(../img/1.png);
+}
+
+/*не работает*/
+.photos .photo-item .layer:hover{
+	display: block;
 }
 
 .photos .photo-item:nth-child(2){
@@ -769,7 +784,13 @@ form input{
 	font-style:italic;
 	font-size:18px;
 	margin-top:50px;
+	outline: none;
 }
+
+::-webkit-input-placeholder {color:#9dc02e;}
+::-moz-placeholder          {color:#9dc02e;}/* Firefox 19+ */
+:-moz-placeholder           {color:#9dc02e;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#9dc02e;}
 
 form input[name='phone']{
 	margin-left:10px;
@@ -797,6 +818,7 @@ form button{
 	font-size:16px;
 	color:#fff;
 	cursor:pointer;
+	outline: none;
 }
 
 footer{
@@ -813,6 +835,8 @@ footer .logo{
 	color:#9dc02e;
 	text-transform:uppercase;
 	float:left;
+	/*background-image: url(../img/logo_footer.png);
+	background-repeat: no-repeat;*/
 }
 
 footer .logo span{
@@ -851,6 +875,7 @@ footer .contacts{
 	font-size:11pt;
 	color:#fff;
 	cursor:pointer;
+	outline: none;
 }
 
 .soc_but{

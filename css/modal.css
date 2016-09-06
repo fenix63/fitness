@@ -48,7 +48,7 @@
 }
 
 .msg_ok .caption, .msg_ok .msg{
-	font-family:'PT Sans';
+	font-family:'PTSansRegular';
 	font-weight:bold;
 	font-weight:18pt;
 	color: #9dc02e;
@@ -79,14 +79,14 @@
 	width:40%;
 	margin-left:auto;
 	margin-right:auto;
-	font-family:'PT Sans';
+	font-family:'PTSansRegular';
 	font-weight:bold;
 	font-size:30px;
 	text-transform:uppercase;
 }
 
 .tren ul li{
-	font-family:'PT Sans';
+	font-family:'PTSansRegular';
 	font-size:18px;
 	list-style-type:none;
 	line-height:1.5;
@@ -103,7 +103,7 @@
 .tren p{
 	margin-top:45px;
 	margin-left:40px;
-	font-family:'PT Sans';
+	font-family:'PTSansRegular';
 	font-size:18px;
 	line-height:1.5;
 }
@@ -134,7 +134,7 @@
 }
 
 .prepod_modal p, .raspisanie_modal p, .skidka{
-	font-family:'PT Sans';
+	font-family:'PTSansRegular';
 	font-size:16px;
 }
 
@@ -161,7 +161,7 @@
 }
 
 .raspisanie_modal .time,.raspisanie_modal .graphic, .raspisanie_modal .photo .name{
-	font-family:'PT Sans';
+	font-family:'PTSansRegular';
 	font-weight:bold;
 	font-size:30px;
 	color:#9dc02e;
@@ -195,7 +195,7 @@
 }
 
 .raspisanie_modal p span{
-	font-family:'PT Sans';
+	font-family:'PTSansRegular';
 	font-weight:bold;
 	font-size:16px;
 }
@@ -206,7 +206,7 @@
 	border:0;
 	border-radius:20px;
 	background-color:#000;
-	font-family:'PT Sans';
+	font-family:'PTSansRegular';
 	font-style:italic;
 	font-size:12pt;
 	color:#bababa;
@@ -217,7 +217,7 @@
     padding: 0px 30px;
 	width:165px;
 	height:35px;
-	font-family:'PT Sans';
+	font-family:'PTSansRegular';
 	font-size:14pt;
 	text-transform:uppercase;
 	color:#fff;

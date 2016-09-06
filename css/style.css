@@ -5,18 +5,36 @@
    
 @font-face {
     font-family: Bodnoff;
-    src: url(../fonts/Bodnoff Plain.ttf); 
+    src: url(../fonts/Bodnoff.ttf); 
    }
    
 @font-face {
-    font-family: PT Sans Italic;
-    src: url(../fonts/PT Sans Italic.ttf); 
+    font-family: PTSansItalic;
+    src: url(../fonts/PTSansItalic.ttf); 
    }
    
 @font-face {
     font-family: PT Sans Bold;
     src: url(../fonts/PT Sans Bold.ttf); 
    }
+
+@font-face {
+    font-family: PT_Sans_Narrow;
+    src: url(../fonts/PT_Sans_Narrow.ttf); 
+   }
+
+@font-face {
+    font-family: PTSansRegular;
+    src: url(../fonts/PTSansRegular.ttf); 
+   }
+
+@font-face {
+    font-family: PTSerifRegular;
+    src: url(../fonts/PTSerifRegular.ttf); 
+   }
+   
+
+
 
    
 body{
@@ -66,7 +84,7 @@ header .logo{
 }
 
 .menu ul li a{
-    font-family: 'PT Sans Narrow';
+    font-family: 'PT_Sans_Narrow';
     padding-top: 3px;
     font-size: 17px;
     color:#000;
@@ -102,7 +120,7 @@ header .logo{
     background-color: #9dc02e;
     opacity: .61;
     text-transform: uppercase;
-    font-family: 'PT Sans';
+    font-family: 'PTSansRegular';
     font-size:18pt;
 }
 
@@ -120,9 +138,9 @@ header .logo{
 .actions-bottom{
     background-color: #000;
     height: 125px;
-    font-family: 'PT Serif';
+    font-family: 'PTSerifRegular';
     font-weight: bold;
-    font-size:20pt;
+    font-size:23pt;
     color:#9dc02e;
     text-transform: uppercase;
 }
@@ -139,8 +157,7 @@ header .logo{
 }
 
 .description .text{
-    font-family: 'PT Sans';
-    font-style: italic;
+    font-family: 'PTSansItalic';
     font-size:18px;
     line-height: 1.5;
     margin-top: 27px;
@@ -154,7 +171,7 @@ header .logo{
 .programms .head{
     width:380px;
     height: auto;
-    font-family: 'PT Sans';
+    font-family: 'PTSansRegular';
     font-weight: bold;
     font-size: 26px;
     text-transform: uppercase;
@@ -186,7 +203,8 @@ body .hr{
 	border-radius:30px;
 	border:2px solid #fff;
 	background-color:transparent;
-	font-family:'Pt Sans';
+	font-family:'PTSansRegular';
+	font-weight: bold;
 	font-size:18px;
 	text-transform:uppercase;
 	color:#fff;
@@ -206,7 +224,7 @@ body .hr{
 }
 
 .items .name{
-	font-family:'PT Sans';
+	font-family:'PTSansRegular';
 	font-weight:bold;
 	color:#fff;
 	font-size:38px;
@@ -214,7 +232,7 @@ body .hr{
 	position:relative;
 	top:42%;
 	margin:0 auto;
-	width:347px;
+	width:355px;
 }
 
 .items .item{
@@ -249,7 +267,7 @@ body .hr{
 }
 
 .item4 .name{
-	width:274px;
+	width:285px;
 }
 
 .item .layer{
@@ -269,7 +287,7 @@ body .hr{
 .instructors .head{
 	width:480px;
 	margin-top:62px;
-	font-family:'Pt Sans';
+	font-family:'PTSansRegular';
 	font-weight:bold;
 	font-size:25px;
 	text-transform:uppercase;
@@ -281,7 +299,7 @@ body .hr{
 }
 
 .instructors .text{
-	font-family:'Pt Sans';
+	font-family:'PTSansRegular';
 	font-style:italic;
 	font-size:17px;
 	margin-top:30px;
@@ -292,11 +310,11 @@ body .hr{
 }
 
 .humans .name{
-	width:60%;
+	width:62%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top:27px;
-	font-family:'Pt Sans';
+	font-family:'PTSansRegular';
 	font-weight:bold;
 	font-size:15pt;
 }
@@ -312,11 +330,11 @@ body .hr{
 }
 
 .humans .people-3 .name{
-	width:67%;
+	width:74%;
 }
 
 .humans .people-4 .name{
-	width:74%;
+	width:78%;
 }
 
 .people-2 .avatar{
@@ -343,7 +361,7 @@ body .hr{
 
 .people .desc{
 	width:70%;
-	font-family:'Pt Sans';
+	font-family:'PTSansRegular';
 	font-size:14px;
 	margin-top:20px;
 	margin-left: auto;
@@ -358,7 +376,7 @@ body .hr{
 
 .price .head{
 	width:300px;
-	font-family: 'Pt Sans';
+	font-family: 'PTSansRegular';
     font-weight: bold;
     font-size: 25px;
     text-transform: uppercase;
@@ -397,7 +415,7 @@ body .hr{
 }
 
 .card .desc{
-	font-family:'PT Sans';
+	font-family:'PTSansRegular';
 	font-size:14px;
 	color:#fff;
 	text-align:center;
@@ -445,7 +463,7 @@ body .hr{
 
 .card .name{
 	color:#fff;
-	font-family:'PT Sans';
+	font-family:'PTSansRegular';
 	font-size:23px;
 	text-transform:uppercase;
 	margin-top: 42px;
@@ -497,7 +515,7 @@ body .hr{
 
 .time_table .head{
 	width:225px;
-	font-family:'PT Sans';
+	font-family:'PTSansRegular';
 	font-weight:bold;
 	font-size:36px;
 	text-transform:uppercase;
@@ -517,7 +535,7 @@ body .hr{
 	border-radius:20px;
 	background-color:#9dc02e;
 	text-transform:uppercase;
-	font-family:'PT Sans';
+	font-family:'PTSansRegular';
 	font-weight:bold;
 	font-size:14px;
 	color:#fff;
@@ -546,7 +564,7 @@ body .hr{
 
 .table .line .time{
 	float:left;
-	font-family:'PT Sans';
+	font-family:'PTSansRegular';
 	font-weight:bold;
 	font-size:24px;
 	color:#e9e9e9;
@@ -561,7 +579,7 @@ body .hr{
 	float:left;
 	width:114px;
 	height:100%;
-	font-family:'PT Sans';
+	font-family:'PTSansRegular';
 	font-weight:bold;
 	font-size:15px;
 }
@@ -617,16 +635,16 @@ body .hr{
 
 .questions .quest{
 	float:left;
-	width:590px;
-	font-family:'PT Sans';
+	width:651px;
+	font-family:'PTSansRegular';
 	font-weight:bold;
 	font-size:18px;
-	margin-left:105px;
+	margin-left:48px;
 	margin-top:48px;
 }
 
 .questions button{
-	font-family:'PT Sans';
+	font-family:'PTSansRegular';
 	font-weight:bold;
 	font-size:14px;
 	text-transform:uppercase;
@@ -649,7 +667,7 @@ body .hr{
 .reviews .head{
 	padding-top:54px;
 	text-transform:uppercase;
-	font-family:'PT Sans';
+	font-family:'PTSansRegular';
 	font-weight:bold;
 	font-size:25px;
 	color:#fff;
@@ -718,7 +736,7 @@ body .hr{
 
 .photogallery .head{
 	width:300px;
-	font-family:'PT Sans';
+	font-family:'PTSansRegular';
 	font-weight:bold;
 	font-size:25px;
 	text-transform:uppercase;
@@ -733,7 +751,8 @@ body .hr{
 .callback .head{
 	width:80%;
 	margin:0 auto;
-	font-family:'PT Serif';
+	font-family:'PTSerifRegular';
+	font-weight:bold;
 	font-size:36px;
 	color:#9dc02e;
 	text-transform:uppercase;
@@ -746,7 +765,7 @@ form input{
 	border:0;
 	border-radius:30px;
 	padding-left:15px;
-	font-family:'PT Sans';
+	font-family:'PTSansRegular';
 	font-style:italic;
 	font-size:18px;
 	margin-top:50px;
@@ -773,7 +792,7 @@ form button{
 	border-radius:30px;
 	background-color:#9dc02e;
 	text-transform:uppercase;
-	font-family:'PT Sans';
+	font-family:'PTSansRegular';
 	font-weight:bold;
 	font-size:16px;
 	color:#fff;
@@ -804,7 +823,7 @@ footer .contacts{
 	margin-left:128px;
 	float:left;
 	color:#fff;
-	font-family:'PT Sans';
+	font-family:'PTSansRegular';
 	font-size:11pt;
 }
 
@@ -827,7 +846,7 @@ footer .contacts{
 	border-radius:20px;
 	background-color:#e06c83;
 	text-transform:uppercase;
-	font-family:'PT Sans';
+	font-family:'PTSansRegular';
 	font-weight:bold;
 	font-size:11pt;
 	color:#fff;
@@ -866,7 +885,7 @@ footer .contacts{
 }
 
 #modal_form .caption{
-	font-family:'PT Sans';
+	font-family:'PTSansRegular';
 	font-size:21px;
 	text-transform:uppercase;
 	width:64%;
@@ -877,7 +896,7 @@ footer .contacts{
 
 #modal_form .name, #modal_form .phone{
 	float:left;
-	font-family:'PT Sans';
+	font-family:'PTSansRegular';
 	font-size:21px;
 
 	margin-top:32px;
@@ -913,7 +932,7 @@ footer .contacts{
 	background-color:#9dc02e;
 	color:#fff;
 	text-transform:uppercase;
-	font-family:'PT Sans';
+	font-family:'PTSansRegular';
 	font-weight:bold;
 	font-size:18px;
 	margin-left:auto;

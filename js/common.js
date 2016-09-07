@@ -1,6 +1,6 @@
 
         var hwSlideSpeed = 700;
-        var hwTimeOut = 3000;
+        var hwTimeOut = 5000;
         var hwNeedLinks = true;
          
         $(document).ready(function(e) {
@@ -144,33 +144,7 @@
 					);
 			});
 			
-			//àÿêñ ôîðìà îáðàòíîé ñâÿçè
-			//ïðîâåðÿåò êàêîé îòâåò áûë ïîëó÷åí
-			//è â çàâèñèìîñòè îò îòâåòà
-			//âûâîäèò èíôîðìàöèþ î ñòàòóñå
-			//îòïðàâêè ïèñüìà
-			$("#modal_form form").submit(function() {
-				var str = $(this).serialize();
-				$.ajax({
-					type: "POST",
-					//url: "js/callback.js",
-					data: str,
-					success: function(msg) {
-						if(msg == 'ok') {
-							alert('Ok');
-						}
-						else {
-							$('#modal_form') 
-							.css('display', 'none') // óáèðaåì ó ìoäaëüíoão oêía display: none;
-							.animate({opacity: 0, top: '50%'}, 200); // ïëaâío ïðèáaâëÿåì ïðoçða÷íoñòü oäíoâðåìåíío ño ñúåçæaíèåì âíèç
-							
-							$('.msg_ok').css('display','block').animate({opacity:1, top:'50%'},200);
-							//alert('error!');
-						}
-					}
-				});
-				return false;
-			});
+			
 			
 			//Òðåíàæåðíûé çàë
 			$('.programms .items button').click( function(event){ // ëoâèì êëèê ïo ññûëêè ñ id="go"

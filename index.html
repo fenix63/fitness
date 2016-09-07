@@ -738,7 +738,7 @@
 	
 	<!--Тут будут лежать модальные окна-->
     <div id="modal_form"><!-- Сaмo oкнo --> 
-      <form action="" method="post" name="callback">
+      <form  name="callback">
 		  <span id="modal_close"><img src="img/close.png" alt="" /></span> <!-- Кнoпкa зaкрыть --> 
 		  <div class="caption">
 			заказ обратного звонка
@@ -746,11 +746,11 @@
 		  <div class="name">
 			Имя
 		  </div>
-		  <input type="text" name="name" value=""/>
+		  <input type="text" name="name" value="" required/>
 		  <div class="phone">
 			Телефон
 		  </div>
-		  <input type="text" name="phone" placeholder="+7(___)-___-__-__" value="" />
+		  <input type="text" name="phone" placeholder="+7(___)-___-__-__" value="" required/>
 		  
 		  <div class="sub">
 			<input type="submit" value="ОТПРАВИТЬ"/>

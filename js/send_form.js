@@ -11,7 +11,7 @@ $(document).ready(function(){
 
                 $.ajax({
                     type: "POST",
-                    url: "mail.php",
+                    url: "../mail.php",
                     data: str,
                     success: function(msg) {
                             //alert('Ok');

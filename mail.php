@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // if (isset($_POST['formData'])) {$formData = $_POST['formData'];}
  
         $to = "fenix_63@mail.ru"; /*Укажите адрес, га который должно приходить письмо*/
-        $sendfrom   = "fitness.ru"; /*Укажите адрес, с которого будет приходить письмо, можно не настоящий, нужно для формирования заголовка письма*/
+        $sendfrom   = "fenix_63@mail.ru"; /*Укажите адрес, с которого будет приходить письмо, можно не настоящий, нужно для формирования заголовка письма*/
         $headers  = "From: " . strip_tags($sendfrom) . "\r\n";
         $headers .= "Reply-To: ". strip_tags($sendfrom) . "\r\n";
         $headers .= "MIME-Version: 1.0\r\n";

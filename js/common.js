@@ -233,7 +233,12 @@
             $('.photos .photo-item').hover(
                 function(){
                     $(this).css('cursor','pointer');
-                    $(this).children('.layer').css('display','block');
+                    $(this).children('.layer').css({
+                        'display':'block',
+                         'position':'absolute',
+                         'top':'0',
+                         'left':'0'
+                    });
                 },
                 function(){
                     $(this).css('cursor','default');

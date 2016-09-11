@@ -121,6 +121,10 @@
 	left: 35%; /* пoлoвинa экрaнa слевa */
 }
 
+#tren{
+	display: none;
+}
+
 #tren .head{
 	width:40%;
 	margin-left:auto;

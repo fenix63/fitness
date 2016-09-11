@@ -1,6 +1,6 @@
 
         var hwSlideSpeed = 700;
-        var hwTimeOut = 5000;
+        var hwTimeOut = 7000;
         var hwNeedLinks = true;
          
         $(document).ready(function(e) {
@@ -149,15 +149,15 @@
 			
 			
 			//Òðåíàæåðíûé çàë
-			$('.programms .items button').click( function(event){ // ëoâèì êëèê ïo ññûëêè ñ id="go"
-				event.preventDefault(); // âûêëþ÷aåì ñòaíäaðòíóþ ðoëü ýëåìåíòa
-				$('#overlay').fadeIn(400, // ñía÷aëa ïëaâío ïoêaçûâaåì òåìíóþ ïoäëoæêó
-					function(){ // ïoñëå âûïoëíåíèÿ ïðåäúèäóùåé aíèìaöèè
-						$('.tren') 
-							.css('display', 'block') // óáèðaåì ó ìoäaëüíoão oêía display: none;
-							.animate({opacity: 1, top: '25%'}, 200); // ïëaâío ïðèáaâëÿåì ïðoçða÷íoñòü oäíoâðåìåíío ño ñúåçæaíèåì âíèç
-				});
-			});
+			// $('.programms .items button').click( function(event){ // ëoâèì êëèê ïo ññûëêè ñ id="go"
+			// 	event.preventDefault(); // âûêëþ÷aåì ñòaíäaðòíóþ ðoëü ýëåìåíòa
+			// 	$('#overlay').fadeIn(400, // ñía÷aëa ïëaâío ïoêaçûâaåì òåìíóþ ïoäëoæêó
+			// 		function(){ // ïoñëå âûïoëíåíèÿ ïðåäúèäóùåé aíèìaöèè
+			// 			$('.tren') 
+			// 				.css('display', 'block') // óáèðaåì ó ìoäaëüíoão oêía display: none;
+			// 				.animate({opacity: 1, top: '25%'}, 200); // ïëaâío ïðèáaâëÿåì ïðoçða÷íoñòü oäíoâðåìåíío ño ñúåçæaíèåì âíèç
+			// 	});
+			// });
 			
 			//Инструктора
 			// $('.humans .avatar').click( function(event){ // ëoâèì êëèê ïo ññûëêè ñ id="go"
@@ -183,15 +183,15 @@
 			// });
 			
 			
-			$('.time_table .questions button').click( function(event){ // ëoâèì êëèê ïo ññûëêè ñ id="go"
-				event.preventDefault(); // âûêëþ÷aåì ñòaíäaðòíóþ ðoëü ýëåìåíòa
-				$('#overlay').fadeIn(400, // ñía÷aëa ïëaâío ïoêaçûâaåì òåìíóþ ïoäëoæêó
-					function(){ // ïoñëå âûïoëíåíèÿ ïðåäúèäóùåé aíèìaöèè
-						$('#modal_form') 
-							.css('display', 'block') // óáèðaåì ó ìoäaëüíoão oêía display: none;
-							.animate({opacity: 1, top: '50%'}, 200); // ïëaâío ïðèáaâëÿåì ïðoçða÷íoñòü oäíoâðåìåíío ño ñúåçæaíèåì âíèç
-				});
-			});
+			// $('.time_table .questions button').click( function(event){ // ëoâèì êëèê ïo ññûëêè ñ id="go"
+			// 	event.preventDefault(); // âûêëþ÷aåì ñòaíäaðòíóþ ðoëü ýëåìåíòa
+			// 	$('#overlay').fadeIn(400, // ñía÷aëa ïëaâío ïoêaçûâaåì òåìíóþ ïoäëoæêó
+			// 		function(){ // ïoñëå âûïoëíåíèÿ ïðåäúèäóùåé aíèìaöèè
+			// 			$('#modal_form') 
+			// 				.css('display', 'block') // óáèðaåì ó ìoäaëüíoão oêía display: none;
+			// 				.animate({opacity: 1, top: '50%'}, 200); // ïëaâío ïðèáaâëÿåì ïðoçða÷íoñòü oäíoâðåìåíío ño ñúåçæaíèåì âíèç
+			// 	});
+			// });
 
             //Раздел цены, кнопка купить
             // $('.card button').click( function(event){ // ëoâèì êëèê ïo ññûëêè ñ id="go"

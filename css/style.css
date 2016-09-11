@@ -561,8 +561,8 @@ body .hr{
 
 .table .line a{
 	text-decoration: none;
-	padding-left: 30px;
-    padding-top: 16px;
+    line-height: 29px;
+    text-align: center;
     width: 113px;
     height: 28px;
 }

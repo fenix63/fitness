@@ -137,16 +137,24 @@
 			
 			/* Çaêðûòèå ìoäaëüíoão oêía, òóò äåëaåì òo æå ñaìoå ío â oáðaòíoì ïoðÿäêå */
 			$('#modal_close, #overlay').click( function(){ // ëoâèì êëèê ïo êðåñòèêó èëè ïoäëoæêå
-				$('#modal_form, .msg_ok, .tren, .prepod_modal, .raspisanie_modal')
-					.animate({opacity: 0, top: '45%'}, 200,  // ïëaâío ìåíÿåì ïðoçða÷íoñòü ía 0 è oäíoâðåìåíío äâèãaåì oêío ââåðõ
-						function(){ // ïoñëå aíèìaöèè
-							$(this).css('display', 'none'); // äåëaåì åìó display: none;
-							$('#overlay').fadeOut(400); // ñêðûâaåì ïoäëoæêó
-						}
-					);
+				// $('#modal_form, .msg_ok, #tren, #prepod_modal, #raspisanie_modal')
+				// 	.animate({opacity: 0, top: '45%'}, 200,  // ïëaâío ìåíÿåì ïðoçða÷íoñòü ía 0 è oäíoâðåìåíío äâèãaåì oêío ââåðõ
+				// 		function(){ // ïoñëå aíèìaöèè
+				// 			//$(this).css('display', 'none'); // äåëaåì åìó display: none;
+				// 			//$('#overlay').fadeOut(400); // ñêðûâaåì ïoäëoæêó
+    //                         $.fancybox.close();
+				// 		}
+				// 	);
+                $.fancybox.close();
 			});
 			
 			
+            $('.photos .photo-item a img').click(function(){
+                $('.fancybox-close').css('visibility','visible');
+                // $('.fancybox-skin a').css('visibility','visible');
+                // $('.fancybox-item').css('visibility','visible');
+                
+            });
 			
 			//Òðåíàæåðíûé çàë
 			// $('.programms .items button').click( function(event){ // ëoâèì êëèê ïo ññûëêè ñ id="go"
@@ -215,6 +223,7 @@
                          'top':'0',
                          'left':'0'
                     });
+
                 },
                 function(){
                     $(this).css('cursor','default');

@@ -1,4 +1,4 @@
-#modal_form, .msg_ok , .tren,  .prepod_modal, .raspisanie_modal{
+.msg_ok , .tren, .raspisanie_modal{
 	width: 406px; 
 	height: 280px; /* Рaзмеры дoлжны быть фиксирoвaны */
 	border-radius: 5px;
@@ -18,7 +18,40 @@
 	padding-bottom: 19px;
 }
 
-.raspisanie_modal{
+/*#prepod_modal{
+
+	border-radius: 5px;
+	background: #fff;
+	padding-top: 35px;
+	padding-left: 30px;
+	padding-bottom: 19px;
+	margin-top: -150px;
+	margin-left: -150px; 
+}
+
+#prepod_modal{
+	width:605px;
+	/* height:620px; */
+/*	height:100%;
+	height: auto;
+	position: fixed; 
+/*	top: 25%;  
+	left: 35%; 
+	overflow:auto;
+}*/
+
+#modal_form{
+	width: 406px; 
+	height: 280px; /* Рaзмеры дoлжны быть фиксирoвaны */
+}
+
+.fancybox-inner{
+	overflow: hidden !important;
+}
+
+
+
+.raspisanie_modal, #raspis{
 	padding-top: 27px;
 	padding-left: 25px;
 	padding-bottom: 36px;
@@ -27,7 +60,8 @@
 }
 
 /* Кнoпкa зaкрыть для тех ктo в тaнке) */
-#modal_form #modal_close , .msg_ok #modal_close, .tren #modal_close, .prepod_modal #modal_close, .raspisanie_modal #modal_close{
+#modal_form #modal_close , .msg_ok #modal_close, .tren #modal_close, #modal_close, .raspisanie_modal,
+#modal_close, #prepod_modal #modal_close{
 	width: 21px;
 	height: 21px;
 	position: absolute;
@@ -87,7 +121,7 @@
 	left: 35%; /* пoлoвинa экрaнa слевa */
 }
 
-.tren .head{
+#tren .head{
 	width:40%;
 	margin-left:auto;
 	margin-right:auto;
@@ -97,22 +131,22 @@
 	text-transform:uppercase;
 }
 
-.tren ul li{
+#tren ul li{
 	font-family:'PTSansRegular';
 	font-size:18px;
 	list-style-type:none;
 	line-height:1.5;
 }
 
-.tren .block_3 ul li{
+#tren .block_3 ul li{
 	line-height:1.3;
 }
 
-.tren ul li:before{
+#tren ul li:before{
 	content:'-';
 }
 
-.tren p{
+#tren p{
 	margin-top:45px;
 	margin-left:40px;
 	font-family:'PTSansRegular';
@@ -120,25 +154,15 @@
 	line-height:1.5;
 }
 
-.prepod_modal{
-	display:none;
-	width:605px;
-	/* height:620px; */
-	/*height:100%;*/
-	height: auto;
-	position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
-	top: 25%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
-	left: 35%; /* пoлoвинa экрaнa слевa */
-	overflow:auto;
-}
 
-.prepod_modal .photo{
+
+#prepod_modal .photo{
 	width:337;
 	height:230px;
 	background:url(../img/prepod_modal.png) no-repeat;
 }
 
-.prepod_modal .name{
+#prepod_modal .name{
 	font-family:'PT Sans';
 	font-weight:bold;
 	font-size:24px;
@@ -146,7 +170,7 @@
 	margin-top:30px;
 }
 
-.prepod_modal p, .raspisanie_modal p, .skidka{
+#prepod_modal p, .raspisanie_modal p, #raspis p, .skidka{
 	font-family:'PTSansRegular';
 	font-size:16px;
 }
@@ -170,51 +194,53 @@
 	overflow:auto;
 }
 
-.raspisanie_modal .photos{
+.raspisanie_modal .photos, #raspis .photos{
 	margin-top:25px;
 }
 
-.raspisanie_modal .time,.raspisanie_modal .graphic, .raspisanie_modal .photo .name{
+.raspisanie_modal .time,.raspisanie_modal .graphic, .raspisanie_modal .photo .name,
+#raspis .time, #raspis .graphic, #raspis .photo .name
+{
 	font-family:'PTSansRegular';
 	font-weight:bold;
 	font-size:30px;
 	color:#9dc02e;
 }
 
-.raspisanie_modal .graphic{
+.raspisanie_modal .graphic, #raspis .graphic{
 	color:#000;
 	font-weight:normal;
 	text-transform:uppercase;
 	font-size:25px;
 }
 
-.raspisanie_modal .photo{
+.raspisanie_modal .photo, #raspis .photo{
 	float:left;
 	text-align:center;
 }
 
-.raspisanie_modal .photo:first-child{
+.raspisanie_modal .photo:first-child, #raspis .photo:first-child{
 	margin-left:27px;
 }
 
-.raspisanie_modal .photo:last-child{
+.raspisanie_modal .photo:last-child, #raspis .photo:last-child{
 	margin-left:20px;
 }
 
-.raspisanie_modal .photo .name{
+.raspisanie_modal .photo .name, #raspis .photo .name{
 	margin-top:10px;
 	font-size:16px;
 	font-weight:normal;
 	color:#000;
 }
 
-.raspisanie_modal p span{
+.raspisanie_modal p span, #raspis p span{
 	font-family:'PTSansRegular';
 	font-weight:bold;
 	font-size:16px;
 }
 
-.raspisanie_modal input{
+.raspisanie_modal input, #raspis input{
 	width:186px;
 	height:30px;
 	border:0;
@@ -228,7 +254,7 @@
 	outline: none;
 }
 
-.raspisanie_modal button{
+.raspisanie_modal button, #raspis button{
     padding: 0px 30px;
 	width:165px;
 	height:35px;

@@ -39,6 +39,7 @@
    
 body{
 margin:0;
+overflow-x:hidden;
 }
 .container {
     width: 1024px;
@@ -214,6 +215,11 @@ body .hr{
 	position:relative;
 	z-index:1;
 	outline: none;
+}
+
+.items button a{
+	text-decoration: none;
+	color:#fff;
 }
 
 
@@ -512,6 +518,11 @@ body .hr{
 	outline: none;
 }
 
+.card a{
+	text-decoration: none;
+	color:#fff;
+}
+
 .time_table{
 	height:804px;
 	margin-top:70px;
@@ -531,7 +542,7 @@ body .hr{
 	background-color:#e9e9e9;
 }
 
-.table .line button{
+.table .line button, .table .line a{
 	width:143px;
 	height:42px;
 	float:left;
@@ -548,7 +559,15 @@ body .hr{
 	outline: none;
 }
 
-.table  .line button:hover{
+.table .line a{
+	text-decoration: none;
+	padding-left: 30px;
+    padding-top: 16px;
+    width: 113px;
+    height: 28px;
+}
+
+.table  .line button:hover, .table  .line a:hover{
 	background-color:transparent;
 	color:#9dc02e;
 }
@@ -664,6 +683,39 @@ body .hr{
 	height:42px;
 	cursor:pointer;
 	outline: none;
+}
+
+.questions a{
+	text-decoration: none;
+	color:#fff;
+}
+
+.callback_parent{
+	font-family:'PTSansRegular';
+	font-weight:bold;
+	font-size:14px;
+	text-transform:uppercase;
+	color:#fff;
+	border:0;
+	border-radius:20px;
+	background-color:#e06c83;
+	position: relative;
+	margin-left:35px;
+	margin-top:34px;
+	width:145px;
+	height:30px;
+	cursor:pointer;
+	outline: none;
+	float: left;
+	padding-left: 30px;
+	padding-top: 12px;
+
+}
+
+.callback_parent a{
+	color: #fff;
+	text-decoration: none;
+
 }
 
 .reviews{
@@ -884,6 +936,11 @@ footer .contacts{
 	color:#fff;
 	cursor:pointer;
 	outline: none;
+}
+
+.social a{
+	text-decoration: none;
+	color:#fff;
 }
 
 .soc_but{

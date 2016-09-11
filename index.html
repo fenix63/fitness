@@ -28,7 +28,46 @@
             }
         });	        
 	</script>
-	
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#content").fancybox({
+            'titlePosition' : 'inside',
+            'transitionIn' : 'none',
+            'transitionOut' : 'none',
+
+        });
+
+        $("#callback").fancybox({
+            'titlePosition' : 'inside',
+            'transitionIn' : 'none',
+            'transitionOut' : 'none',
+
+        }); 
+
+        $("#buy").fancybox({
+            'titlePosition' : 'inside',
+            'transitionIn' : 'none',
+            'transitionOut' : 'none',
+
+        });
+
+        $("#avatar").fancybox({
+            'titlePosition' : 'inside',
+            'transitionIn' : 'none',
+            'transitionOut' : 'none',
+
+        });
+        
+        $("#detail").fancybox({
+            'titlePosition' : 'inside',
+            'transitionIn' : 'none',
+            'transitionOut' : 'none',
+        });
+        
+
+    });
+</script>
 
 
 </head>
@@ -117,7 +156,7 @@
 						тренажерный зал
 					</div>
 					<div class="about">
-						<button>подробнее</button>
+						<button><a id="detail" href="#tren">подробнее</a></button>
 					</div>
 					<div class="layer"></div>
 				</div>
@@ -126,7 +165,7 @@
 						пилатес
 					</div>
 					<div class="about">
-						<button>подробнее</button>
+						<button><a id="detail" href="#tren">подробнее</a></button>
 					</div>
 					<div class="layer"></div>
 				
@@ -136,7 +175,7 @@
 						йога
 					</div>
 					<div class="about">
-						<button>подробнее</button>
+						<button><a id="detail" href="#tren">подробнее</a></button>
 					</div>
 					<div class="layer"></div>
 				
@@ -146,7 +185,7 @@
 						другие услуги
 					</div>
 					<div class="about">
-						<button>подробнее</button>
+						<button><a id="detail" href="#tren">подробнее</a></button>
 					</div>
 					<div class="layer"></div>
 				</div>
@@ -167,6 +206,7 @@
 			<div class="humans">
 				<div class="people">
 					<div class="avatar">
+                        <a id="avatar" href="#prepod_modal"><img src="img/prepod_1.png"></a>
 					</div>
 					<div class="name">
 						Елена Жолудева
@@ -176,8 +216,9 @@
 					</div>
 				</div>
 				<div class="people people-2">
-					<div class="avatar">
-					</div>
+                    <div class="avatar">
+                        <a id="avatar" href="#prepod_modal"><img src="img/prepod_2.png"></a>
+                    </div>
 					<div class="name">
 						Соня Яшина
 					</div>
@@ -186,8 +227,9 @@
 					</div>
 				</div>
 				<div class="people people-3">
-					<div class="avatar">
-					</div>
+                    <div class="avatar">
+                        <a id="avatar" href="#prepod_modal"><img src="img/prepod_3.png"></a>
+                    </div>
 					<div class="name">
 						Андрей Миловский
 					</div>
@@ -196,8 +238,9 @@
 					</div>
 				</div>
 				<div class="people people-4">
-					<div class="avatar">
-					</div>
+                    <div class="avatar">
+                        <a id="avatar" href="#prepod_modal"><img src="img/prepod_4.png"></a>
+                    </div>
 					<div class="name">
 						Валерий Островский
 					</div>
@@ -226,7 +269,7 @@
 					<div class="desc">
 						Cамая выгодная система оплаты <br/> на месяц, полгода или год! Также <br/> существуют подарочные варианты <br/> клубных карт и возможность <br/> приобретения в рассрочку.
 					</div>
-					<button>купить</button>
+					<button><a id="buy" href="#modal_form">купить</a></button>
 					<div class="layer"></div>
 				</div>
 				<div class="card">
@@ -239,7 +282,7 @@
 					<div class="desc">
 						Более выгодна цена <br/> по сравнению с поразовой оплатой.
 					</div>
-					<button>купить</button>
+					<button><a id="buy" href="#modal_form">купить</a></button>
 					<div class="layer"></div>
 				</div>
 				<div class="card">
@@ -252,7 +295,7 @@
 					<div class="desc">
 						Целесообразная для знакомящихся <br/> со стилем или преподаванием <br/> впервые.
 					</div>
-					<button>купить</button>
+					<button><a id="buy" href="#modal_form">купить</a></button>
 					<div class="layer"></div>
 				</div>
 			</div>
@@ -309,9 +352,12 @@
 							9:00-10:00
 						</div>
 					</div>
-					<button>
+                    <a id="content" href="#raspis">записаться</a>
+
+                    
+<!-- 					<button>
 						записаться
-					</button>
+					</button> -->
 					
 				</div>
 				<div class="line">
@@ -354,9 +400,10 @@
 							9:00-10:00
 						</div>
 					</div>
-					<button>
+                    <a id="content" href="#raspis">записаться</a>
+<!-- 					<button>
 						записаться
-					</button>
+					</button> -->
 					
 				</div>
 				<div class="line">
@@ -399,9 +446,10 @@
 							9:00-10:00
 						</div>
 					</div>
-					<button>
+                    <a id="content" href="#raspis">записаться</a>
+<!-- 					<button>
 						записаться
-					</button>
+					</button> -->
 					
 				</div>
 				<div class="line">
@@ -444,9 +492,10 @@
 							9:00-10:00
 						</div>
 					</div>
-					<button>
+                    <a id="content" href="#raspis">записаться</a>
+<!-- 					<button>
 						записаться
-					</button>
+					</button> -->
 					
 				</div>
 				<div class="line">
@@ -489,9 +538,10 @@
 							9:00-10:00
 						</div>
 					</div>
-					<button>
+                    <a id="content" href="#raspis">записаться</a>
+<!-- 					<button>
 						записаться
-					</button>
+					</button> -->
 					
 				</div>
 				<div class="line">
@@ -534,9 +584,10 @@
 							9:00-10:00
 						</div>
 					</div>
-					<button>
+                    <a id="content" href="#raspis">записаться</a>
+<!-- 					<button>
 						записаться
-					</button>
+					</button> -->
 					
 				</div>
 			</div>
@@ -548,7 +599,11 @@
 					<div class="cell">
 					</div>
 					<div class="quest">Есть вопросы? Не беда! Свяжитесь с нами и мы постараемся Вам помочь!</div>
-					<button>Заказать звонок</button>
+					
+                    <button>
+                        <a id="callback" href="#modal_form">Заказать звонок</a>
+                    </button>
+                    <!-- <button>Заказать звонок</button> -->
 				</div><!--line-->
 			</div>
 		</div>
@@ -725,7 +780,7 @@
 			</div>
 			
 			<div class="social">
-				<button>заказать звонок</button>
+				<button><a id="buy"  href="#modal_form">заказать звонок</a></button>
 				<div class="soc_but">
 					<div class="vk"></div>
 					<div class="inst"></div>
@@ -737,7 +792,7 @@
 
 	
 	<!--Тут будут лежать модальные окна-->
-    <div id="modal_form"><!-- Сaмo oкнo --> 
+    <div id="modal_form" style="display:none;"><!-- Сaмo oкнo --> 
       <form  name="callback">
 		  <span id="modal_close"><img src="img/close.png" alt="" /></span> <!-- Кнoпкa зaкрыть --> 
 		  <div class="caption">
@@ -774,7 +829,7 @@
 	
 	<!--Всплывающее окно тренажерный зал-->
 	
-	<div class="tren">
+	<div id="tren">
 		<span id="modal_close"><img src="img/close.png" alt="" /></span> <!-- Кнoпкa зaкрыть -->
 		<div class="head">
 			тренажерный зал
@@ -811,7 +866,7 @@
 		
 	</div>
 	
-	<div class="prepod_modal">
+	<div id="prepod_modal" style="display:none;">
 		<span id="modal_close"><img src="img/close.png" alt="" /></span> <!-- Кнoпкa зaкрыть -->
 			<div class="photo">
 				
@@ -836,7 +891,8 @@
 		
 	</div>
 		
-		<div class="raspisanie_modal">
+        <!--Модальное окно Расписание занятий было class="raspisanie_modal"-->
+		<div  id="raspis" style="display:none;">
 			<span id="modal_close"><img src="img/close.png" alt="" /></span> <!-- Кнoпкa зaкрыть -->
 			<div class="time">
 				9:00

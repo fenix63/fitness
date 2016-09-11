@@ -105,9 +105,11 @@
 					$('.items .item').hover(function(){
 						$(this).children('.layer').css('display','block');
 						$(this).children('.about').children('button').css({'color':'#9dc02e','background-color':'#fff'});
+                        $(this).children('.about').children('button').children('a').css({'color':'#9dc02e'});
 					}, function(){
 						$(this).children('.layer').css('display','none');
 						$(this).children('.about').children('button').css({'color':'#fff','background-color':'transparent'});
+                        $(this).children('.about').children('button').children('a').css({'color':'#fff'});
 					});
 					
 					
@@ -123,15 +125,15 @@
 	
 
 		$(document).ready(function() { // âñÿ ìaãèÿ ïoñëå çaãðóçêè ñòðaíèöû
-			$('.social button').click( function(event){ // ëoâèì êëèê ïo ññûëêè ñ id="go"
-				event.preventDefault(); // âûêëþ÷aåì ñòaíäaðòíóþ ðoëü ýëåìåíòa
-				$('#overlay').fadeIn(400, // ñía÷aëa ïëaâío ïoêaçûâaåì òåìíóþ ïoäëoæêó
-					function(){ // ïoñëå âûïoëíåíèÿ ïðåäúèäóùåé aíèìaöèè
-						$('#modal_form') 
-							.css('display', 'block') // óáèðaåì ó ìoäaëüíoão oêía display: none;
-							.animate({opacity: 1, top: '50%'}, 200); // ïëaâío ïðèáaâëÿåì ïðoçða÷íoñòü oäíoâðåìåíío ño ñúåçæaíèåì âíèç
-				});
-			});
+			// $('.social button').click( function(event){ // ëoâèì êëèê ïo ññûëêè ñ id="go"
+			// 	event.preventDefault(); // âûêëþ÷aåì ñòaíäaðòíóþ ðoëü ýëåìåíòa
+			// 	$('#overlay').fadeIn(400, // ñía÷aëa ïëaâío ïoêaçûâaåì òåìíóþ ïoäëoæêó
+			// 		function(){ // ïoñëå âûïoëíåíèÿ ïðåäúèäóùåé aíèìaöèè
+			// 			$('#modal_form') 
+			// 				.css('display', 'block') // óáèðaåì ó ìoäaëüíoão oêía display: none;
+			// 				.animate({opacity: 1, top: '50%'}, 200); // ïëaâío ïðèáaâëÿåì ïðoçða÷íoñòü oäíoâðåìåíío ño ñúåçæaíèåì âíèç
+			// 	});
+			// });
 			
 			/* Çaêðûòèå ìoäaëüíoão oêía, òóò äåëaåì òo æå ñaìoå ío â oáðaòíoì ïoðÿäêå */
 			$('#modal_close, #overlay').click( function(){ // ëoâèì êëèê ïo êðåñòèêó èëè ïoäëoæêå
@@ -157,28 +159,28 @@
 				});
 			});
 			
-			//Ïðåïîäàâàòåëè
-			$('.humans .avatar').click( function(event){ // ëoâèì êëèê ïo ññûëêè ñ id="go"
-				event.preventDefault(); // âûêëþ÷aåì ñòaíäaðòíóþ ðoëü ýëåìåíòa
-				$('#overlay').fadeIn(400, // ñía÷aëa ïëaâío ïoêaçûâaåì òåìíóþ ïoäëoæêó
-					function(){ // ïoñëå âûïoëíåíèÿ ïðåäúèäóùåé aíèìaöèè
-						$('.prepod_modal') 
-							.css('display', 'block') // óáèðaåì ó ìoäaëüíoão oêía display: none;
-							.animate({opacity: 1, top: '25%'}, 200); // ïëaâío ïðèáaâëÿåì ïðoçða÷íoñòü oäíoâðåìåíío ño ñúåçæaíèåì âíèç
-				});
-			});
+			//Инструктора
+			// $('.humans .avatar').click( function(event){ // ëoâèì êëèê ïo ññûëêè ñ id="go"
+			// 	event.preventDefault(); // âûêëþ÷aåì ñòaíäaðòíóþ ðoëü ýëåìåíòa
+			// 	$('#overlay').fadeIn(400, // ñía÷aëa ïëaâío ïoêaçûâaåì òåìíóþ ïoäëoæêó
+			// 		function(){ // ïoñëå âûïoëíåíèÿ ïðåäúèäóùåé aíèìaöèè
+			// 			$('.prepod_modal') 
+			// 				.css('display', 'block') // óáèðaåì ó ìoäaëüíoão oêía display: none;
+			// 				.animate({opacity: 1, top: '25%'}, 200); // ïëaâío ïðèáaâëÿåì ïðoçða÷íoñòü oäíoâðåìåíío ño ñúåçæaíèåì âíèç
+			// 	});
+			// });
 			
 			
-			//Ðàñïèñàíèå çàíÿòèé
-			$('.time_table .table button').click( function(event){ // ëoâèì êëèê ïo ññûëêè ñ id="go"
-				event.preventDefault(); // âûêëþ÷aåì ñòaíäaðòíóþ ðoëü ýëåìåíòa
-				$('#overlay').fadeIn(400, // ñía÷aëa ïëaâío ïoêaçûâaåì òåìíóþ ïoäëoæêó
-					function(){ // ïoñëå âûïoëíåíèÿ ïðåäúèäóùåé aíèìaöèè
-						$('.raspisanie_modal') 
-							.css('display', 'block') // óáèðaåì ó ìoäaëüíoão oêía display: none;
-							.animate({opacity: 1, top: '25%'}, 200); // ïëaâío ïðèáaâëÿåì ïðoçða÷íoñòü oäíoâðåìåíío ño ñúåçæaíèåì âíèç
-				});
-			});
+			//Открытие модального окна "Расписание занятий"
+			// $('.time_table .table button').click( function(event){ // ëoâèì êëèê ïo ññûëêè ñ id="go"
+			// 	event.preventDefault(); // âûêëþ÷aåì ñòaíäaðòíóþ ðoëü ýëåìåíòa
+			// 	$('#overlay').fadeIn(400, // ñía÷aëa ïëaâío ïoêaçûâaåì òåìíóþ ïoäëoæêó
+			// 		function(){ // ïoñëå âûïoëíåíèÿ ïðåäúèäóùåé aíèìaöèè
+			// 			$('.raspisanie_modal') 
+			// 				.css('display', 'block') // óáèðaåì ó ìoäaëüíoão oêía display: none;
+			// 				.animate({opacity: 1, top: '25%'}, 200); // ïëaâío ïðèáaâëÿåì ïðoçða÷íoñòü oäíoâðåìåíío ño ñúåçæaíèåì âíèç
+			// 	});
+			// });
 			
 			
 			$('.time_table .questions button').click( function(event){ // ëoâèì êëèê ïo ññûëêè ñ id="go"
@@ -192,15 +194,15 @@
 			});
 
             //Раздел цены, кнопка купить
-            $('.card button').click( function(event){ // ëoâèì êëèê ïo ññûëêè ñ id="go"
-                event.preventDefault(); // âûêëþ÷aåì ñòaíäaðòíóþ ðoëü ýëåìåíòa
-                $('#overlay').fadeIn(400, // ñía÷aëa ïëaâío ïoêaçûâaåì òåìíóþ ïoäëoæêó
-                    function(){ // ïoñëå âûïoëíåíèÿ ïðåäúèäóùåé aíèìaöèè
-                        $('#modal_form') 
-                            .css('display', 'block') // óáèðaåì ó ìoäaëüíoão oêía display: none;
-                            .animate({opacity: 1, top: '50%'}, 200); // ïëaâío ïðèáaâëÿåì ïðoçða÷íoñòü oäíoâðåìåíío ño ñúåçæaíèåì âíèç
-                });
-            });
+            // $('.card button').click( function(event){ // ëoâèì êëèê ïo ññûëêè ñ id="go"
+            //     event.preventDefault(); // âûêëþ÷aåì ñòaíäaðòíóþ ðoëü ýëåìåíòa
+            //     $('#overlay').fadeIn(400, // ñía÷aëa ïëaâío ïoêaçûâaåì òåìíóþ ïoäëoæêó
+            //         function(){ // ïoñëå âûïoëíåíèÿ ïðåäúèäóùåé aíèìaöèè
+            //             $('#modal_form') 
+            //                 .css('display', 'block') // óáèðaåì ó ìoäaëüíoão oêía display: none;
+            //                 .animate({opacity: 1, top: '50%'}, 200); // ïëaâío ïðèáaâëÿåì ïðoçða÷íoñòü oäíoâðåìåíío ño ñúåçæaíèåì âíèç
+            //     });
+            // });
 
 
             //Лупа при наведении

@@ -76,7 +76,9 @@
 }
 
 #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
-	background-image: url('fancybox_sprite.png');
+/*	background-image: url('fancybox_sprite.png');*/
+	background-image: url('close.png');
+	background-repeat: no-repeat;
 }
 
 #fancybox-loading {
@@ -99,8 +101,10 @@
 
 .fancybox-close {
 	position: absolute;
-	top: -18px;
-	right: -18px;
+/*	top: -18px;
+	right: -18px;*/
+	top: 10px;
+    right: -5px;
 	width: 36px;
 	height: 36px;
 	cursor: pointer;
